@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="nyoba.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="">
+            <a href="/login form/coba.html">
+                <img src="/login form/logo-white.png" alt="Logo">
+            </a>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="current">
+                    <a href="#">Beranda</a>
+                </li>
+                <li>
+                    <a href="#">Kelebihan</a>
+                </li>
+                <li>
+                    <a href="#">Tentang Kami</a>
+                </li>
+                <li>
+                    <a href="#">Harga</a>
+                </li>
+                <li>
+                    <a href="#">Layanan</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form-container login-form">
+            <h2 class="judul">Masuk ke akunmu</h2>
+                <form action="/login" method="post">
+                    <div class="input-group">
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+                    <button type="submit">Login</button>
+                    <p class="switch-form">Belum Punya Akun? <a href="#" id="show-register">Daftar Sekarang</a></p>
+                </form>
+            </div>
+
+            <div class="form-container register-form" style="display: none;">
+            <h2 class="judul">Daftar dan Pilih Paketmu</h2>
+                <form action="/register" method="post">
+                    <div class="input-group">
+                        <input type="text" name="name" required>
+                        <label>Nama Lengkap</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" required>
+                        <label>Email Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" name="handphone_number" required>
+                        <label>No. HP (Whatsapp)</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" class="form-control" value="" required>
+                    </div>
+                    <div class="input-group2">
+                        <label>Pilih Paket</label>
+                        <select name="package">
+                            <option value="1" data-price="50000">" 1 Bulan - Rp 50.000 "</option>
+                            <option value="2" data-price="135000">" 3 Bulan - Rp 135.000 "</option>
+                            <option value="3" data-price="250000">" 6 Bulan - Rp 250.000 "</option>
+                        </select>
+                    </div>
+                    <button type="submit">Regis</button>
+                    <p class="switch-form">Sudah Mempunyai Akun? <a href="#" id="show-login">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="mencoba.js"></script>
+</body>
+</html>
